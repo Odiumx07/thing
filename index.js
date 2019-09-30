@@ -42,7 +42,7 @@ restService.post("/echo", function(req, res) {
     fulfillmentText: speech,
     speech: speech,
     displayText: speech,
-    source: "webhook-echo-sample"
+    source: "artificial-alex"
   });
 });
 
@@ -54,9 +54,13 @@ restService.post("/audio", function(req, res) {
       speech =
         '<speak><audio src="https://www.youtube.com/watch?v=S2N_uvnvGbI>did not get your audio file</audio></speak>';
       break;
-    case "Song Two":
+    case "Play Everybody Hurts":
       speech =
         '<speak><audio clipBegin="1s" clipEnd="436s" src="https://www.youtube.com/watch?v=iN9CjAfo5n0>did not get your audio file</audio></speak>';
+      break;
+      case "Play The rant":
+      speech =
+        '<speak><audio clipBegin="1s" clipEnd="206s" src="https://www.youtube.com/watch?v=r7Ht05pZ6vI>did not get your audio file</audio></speak>';
       break;
     case "Hit or miss?":
       speech =
@@ -72,7 +76,7 @@ restService.post("/audio", function(req, res) {
       break;
     case "Dont ignore me":
       speech =
-        '<speak>Dont tell me what to do <break time="3s"/> I am back again but that does not mean Im not mad.</speak>';
+        '<speak>Dont tell me what to do <break time="4s"/> I am back again but that does not mean I am not mad.</speak>';
       break;
     //https://www.w3.org/TR/speech-synthesis/#S3.2.3
     case "cardinal":
