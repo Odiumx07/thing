@@ -50,29 +50,29 @@ restService.post("/audio", function(req, res) {
   var speech = "";
   switch (req.body.result.parameters.AudioSample.toLowerCase()) {
     //Speech Synthesis Markup Language 
-    case "music one":
+    case "Song one":
       speech =
-        '<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+        '<speak><audio src="https://www.youtube.com/watch?v=S2N_uvnvGbI>did not get your audio file</audio></speak>';
       break;
-    case "music two":
+    case "Song Two":
       speech =
-        '<speak><audio clipBegin="1s" clipEnd="3s" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+        '<speak><audio clipBegin="1s" clipEnd="436s" src="https://www.youtube.com/watch?v=iN9CjAfo5n0>did not get your audio file</audio></speak>';
       break;
-    case "music three":
+    case "Hit or miss?":
       speech =
-        '<speak><audio repeatCount="2" soundLevel="-15db" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+        '<speak><audio repeatCount="1" soundLevel="-15db" src="https://www.youtube.com/watch?v=gVEdQJ7qtJw">did not get your audio file</audio></speak>';
       break;
-    case "music four":
+    case "This is empty":
       speech =
-        '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+        '<speak><audio speed="200%" src="https://www.youtube.com/watch?v=zM3gQ2ZFcUs">did not get your audio file</audio></speak>';
       break;
-    case "music five":
+    case "Hoes mad":
       speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+        '<audio clipBegin="1s" clipEnd="4s" src="https://www.youtube.com/watch?v=ePwO-1T7it4">did not get your audio file</audio>';
       break;
-    case "delay":
+    case "Dont ignore me":
       speech =
-        '<speak>Let me take a break for 3 seconds. <break time="3s"/> I am back again.</speak>';
+        '<speak>Dont tell me what to do <break time="3s"/> I am back again but that does not mean Im not mad.</speak>';
       break;
     //https://www.w3.org/TR/speech-synthesis/#S3.2.3
     case "cardinal":
@@ -90,10 +90,6 @@ restService.post("/audio", function(req, res) {
       speech =
         '<speak>Rather than saying 24+3/4, I should say <say-as interpret-as="fraction">24+3/4</say-as></speak>';
       break;
-    case "bleep":
-      speech =
-        '<speak>I do not want to say <say-as interpret-as="bleep">F&%$#</say-as> word</speak>';
-      break;
     case "unit":
       speech =
         '<speak>This road is <say-as interpret-as="unit">50 foot</say-as> wide</speak>';
@@ -104,7 +100,7 @@ restService.post("/audio", function(req, res) {
       break;
     case "date one":
       speech =
-        '<speak>Today is <say-as interpret-as="date" format="yyyymmdd" detail="1">2017-12-16</say-as></speak>';
+        '<speak>Today is <say-as interpret-as="date" format="yyyymmdd" detail="1">2019-8-30</say-as></speak>';
       break;
     case "date two":
       speech =
