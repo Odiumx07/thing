@@ -49,14 +49,14 @@ restService.post("/echo", function(req, res) {
 restService.post("/audio", function(req, res) {
   var speech = "";
   switch (req.body.result.parameters.AudioSample.toLowerCase()) {
-    //Speech Synthesis Markup Language 
-    case "Song one":
-      speech =
-        '<speak><audio src="https://www.youtube.com/watch?v=S2N_uvnvGbI>did not get your audio file</audio></speak>';
-      break;
+    //Speech Synthesis Markup Language
     case "Play Everybody Hurts":
       speech =
         '<speak><audio clipBegin="1s" clipEnd="436s" src="https://www.youtube.com/watch?v=iN9CjAfo5n0>did not get your audio file</audio></speak>';
+      break;
+          case "Play that one song about lesbians":
+      speech =
+        '<speak><audio src="https://https://music.apple.com/us/album/pride-a-compilation-of-lgbtq-artists-for-glsen/1396106926>did not get your audio file</audio></speak>';
       break;
       case "Play The rant":
       speech =
